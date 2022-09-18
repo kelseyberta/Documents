@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Spice Test</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for spice_test_wide {bakeoff}"><tr><td>spice_test_wide {bakeoff}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Spice Test</h2>
+
+<h3>Description</h3>
+
+<p>Results of a knowledge test from Junior Bake Off (Series 2, Episode 14).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+spice_test_wide
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 4 rows representing baker results from the
+spice-based knowledge test and 7 variables:
+</p>
+
+<dl>
+<dt>baker</dt><dd><p>A character string with a given name or nickname.</p>
+</dd>
+<dt>guess_1,guess_2,guess_3</dt><dd><p>The different guesses (in order) for what
+the mystery spice was.</p>
+</dd>
+<dt>correct_1,correct_2,correct_3</dt><dd><p>An integer whether the guess was
+correct (<code>1</code>) or wrong (<code>0</code>).</p>
+</dd>
+</dl>
+
+
+
+<h3>Examples</h3>
+
+<pre>
+if (require('tibble')) {
+  spice_test_wide
+ }
+head(spice_test_wide)
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>bakeoff</em> version 0.2.0 <a href="00Index.html">Index</a>]</div>
+</div></body></html>

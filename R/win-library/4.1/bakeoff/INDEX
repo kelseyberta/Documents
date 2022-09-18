@@ -1,0 +1,16 @@
+bakeoff_colors          Extract named *bakeoff* colors as hex codes
+bakeoff_palette         A *bakeoff* palette generator
+bakeoff_palette_names   Print names of all *bakeoff* color palettes
+bakers                  Bakers
+bakers_raw              Bakers (raw)
+bakes_raw               Bakes (raw)
+challenges              Challenges
+episodes                Episodes
+episodes_raw            Each episodes' challenges (raw)
+ratings                 Ratings
+ratings_raw             Each episode's ratings (raw)
+results_raw             Each baker's results by episode (raw)
+scale_bakeoff           Color scale constructor for *bakeoff* colors
+seasons_raw             Data about each season aired in the US (raw)
+series_raw              Data about each series aired in the UK (raw)
+spice_test_wide         Spice Test

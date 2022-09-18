@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: A *bakeoff* palette generator</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for bakeoff_palette {bakeoff}"><tr><td>bakeoff_palette {bakeoff}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>A <strong>bakeoff</strong> palette generator</h2>
+
+<h3>Description</h3>
+
+<p>A <strong>bakeoff</strong> palette generator
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+bakeoff_palette(
+  palette = "showstopper",
+  n,
+  direction = 1,
+  type = c("discrete", "continuous")
+)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>palette</code></td>
+<td>
+<p>Name of desired palette. Can be either <code>"showstopper"</code> (the
+default), <code>"signature"</code>, and <code>"finale"</code> (accessible through
+<code>bakeoff_palette_names()</code>).</p>
+</td></tr>
+<tr valign="top"><td><code>n</code></td>
+<td>
+<p>Number of colors desired. All palettes have 10 colors, matching the
+total number of series and maximum number of episodes per series. If
+omitted, <strong>bakeoff</strong> uses all colors.</p>
+</td></tr>
+<tr valign="top"><td><code>direction</code></td>
+<td>
+<p>Either <code>1</code> or <code>-1</code>. If <code>-1</code>, the palette will be reversed.</p>
+</td></tr>
+<tr valign="top"><td><code>type</code></td>
+<td>
+<p>Either <code>"continuous"</code> or <code>"discrete"</code>. Use continuous if you want
+to automatically interpolate between colors.</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>A vector of colors.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+bakeoff_palette("showstopper")
+
+if (require('scales')) {
+  show_col(bakeoff_palette("finale"))
+ }
+
+if (require('ggplot2')) {
+line_plot &lt;- ggplot(ratings, aes(x = episode, y = viewers_7day,
+color = as.factor(series), group = series)) + facet_wrap(~series) + geom_line(lwd = 2)
+line_plot + scale_color_manual(values = bakeoff_palette(), guide = "none")
+
+ggplot(episodes, aes(episode, bakers_appeared, fill = as.factor(series))) +
+geom_col() + facet_wrap(~series) +
+scale_fill_manual(values = bakeoff_palette("signature"), guide = "none") +
+scale_x_continuous(breaks = scales::pretty_breaks())
+}
+
+# If you need more colors than normally found in a palette, you
+# can use a continuous palette to interpolate between existing
+# colours
+pal &lt;- bakeoff_palette(palette = "finale", n = 20, type = "continuous")
+if (require('scales')) {
+show_col(pal)
+}
+
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>bakeoff</em> version 0.2.0 <a href="00Index.html">Index</a>]</div>
+</div></body></html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Data about each season aired in the US (raw)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for seasons_raw {bakeoff}"><tr><td>seasons_raw {bakeoff}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Data about each season aired in the US (raw)</h2>
+
+<h3>Description</h3>
+
+<p>This data has one row per season aired in the US as 'The Great British
+Baking Show'.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+seasons_raw
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 8 rows representing individual series and 11
+variables:
+</p>
+
+<dl>
+<dt>series</dt><dd><p>an integer denoting UK series (<code>1</code>-<code>8</code>)</p>
+</dd>
+<dt>episode</dt><dd><p>an integer denoting total number of episodes within series</p>
+</dd>
+<dt>us_season</dt><dd><p>an integer denoting US season (<code>1</code>-<code>5</code>)</p>
+</dd>
+<dt>us_airdate</dt><dd><p>a date denoting original airdate of episode in the US,
+according to
+<a href="https://www.pbs.org/food/shows/great-british-baking-show/">pbs.org</a></p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>US airdates manually recorded from
+<a href="https://www.pbs.org/food/shows/great-british-baking-show/">https://www.pbs.org/food/shows/great-british-baking-show/</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+if (require('tibble')) {
+  seasons_raw
+ }
+head(seasons_raw)
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>bakeoff</em> version 0.2.0 <a href="00Index.html">Index</a>]</div>
+</div></body></html>

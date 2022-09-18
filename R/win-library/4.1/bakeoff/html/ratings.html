@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Ratings</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for ratings {bakeoff}"><tr><td>ratings {bakeoff}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Ratings</h2>
+
+<h3>Description</h3>
+
+<p>This dataset has one row per episode and includes ratings plus
+original airdates in the UK (by series) and US
+(by season). This dataset is made by joining the <code><a href="../../bakeoff/help/ratings_raw.html">ratings_raw</a></code>
+and <code><a href="../../bakeoff/help/seasons_raw.html">seasons_raw</a></code> datasets by both <code>series</code> and <code>episode</code>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+ratings
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data frame with 94 rows representing individual episodes and 11
+variables:
+</p>
+
+<dl>
+<dt>series</dt><dd><p>An integer denoting UK series (<code>1</code>-<code>10</code>).</p>
+</dd>
+<dt>episode</dt><dd><p>An integer denoting episode number within a series.</p>
+</dd>
+<dt>uk_airdate</dt><dd><p>A date denoting original airdate of episode in the UK.</p>
+</dd>
+<dt>viewers_7day</dt><dd><p>The number of viewers in millions within a 7-day window
+from airdate.</p>
+</dd>
+<dt>viewers_28day</dt><dd><p>The number of viewers in millions within a 28-day
+window from airdate.</p>
+</dd>
+<dt>network_rank</dt><dd><p>An integer denoting the episode's weekly ranking within
+network (note that the networks changed for series 8 and later).</p>
+</dd>
+<dt>channels_rank</dt><dd><p>An integer denoting the episode's weekly ranking
+across all channels.</p>
+</dd>
+<dt>bbc_iplayer_requests</dt><dd><p>Number of BBC iPlayer requests (note: not
+available for all series, and only for series that aired on the BBC).</p>
+</dd>
+<dt>us_season</dt><dd><p>An integer denoting US season (<code>1</code>-<code>5</code>).</p>
+</dd>
+<dt>us_airdate</dt><dd><p>A date denoting original airdate of episode in the US,
+according to
+<a href="https://www.pbs.org/food/shows/great-british-baking-show/">pbs.org</a>.</p>
+</dd>
+</dl>
+
+
+
+<h3>Source</h3>
+
+<p>See
+<a href="https://en.wikipedia.org/wiki/The_Great_British_Bake_Off_(series_1)#Ratings">https://en.wikipedia.org/wiki/The_Great_British_Bake_Off_(series_1)#Ratings</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+if (require('tibble')) {
+  ratings
+ }
+head(ratings)
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>bakeoff</em> version 0.2.0 <a href="00Index.html">Index</a>]</div>
+</div></body></html>

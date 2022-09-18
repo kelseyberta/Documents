@@ -1,0 +1,26 @@
+---
+title: "W3 Task Gapminder"
+author: "Kelsey Berta"
+date: '2022-05-06'
+output:
+  pdf_document: default
+  html_document:
+    keep_md: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r}
+library(tidyverse)
+library(gapminder)
+ggplot(data = gapminder) + 
+    geom_smooth(mapping = aes(x = year, y = gdpPercap)) + 
+    facet_wrap(~ continent, nrow = 1) + theme_bw()
+
+```
+```
+
