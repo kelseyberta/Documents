@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Extract named *bakeoff* colors as hex codes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for bakeoff_colors {bakeoff}"><tr><td>bakeoff_colors {bakeoff}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Extract named <strong>bakeoff</strong> colors as hex codes</h2>
+
+<h3>Description</h3>
+
+<p>Get a vector of hexadecimal color codes, or, extract a subset of colors as a
+using defined color names (available using <code>names(bakeoff_colors())</code>).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+bakeoff_colors(...)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>...</code></td>
+<td>
+<p>Character names of <strong>bakeoff</strong> colors. If none are specified,
+returns all. If any are specified, they can be listed by names in quotes
+(no need to combine with <code>c()</code>).</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>A named character vector of hex colors.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+bakeoff_colors()
+bakeoff_colors("riptide")
+bakeoff_colors("baltic", "yellow")
+names(bakeoff_colors())
+
+if (require('scales')) {
+  scales::show_col(bakeoff_colors(), label = FALSE)
+}
+
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>bakeoff</em> version 0.2.0 <a href="00Index.html">Index</a>]</div>
+</div></body></html>
