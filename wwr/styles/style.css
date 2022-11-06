@@ -216,8 +216,12 @@ main section img {
 #top-msg h4 {
     color:black;
 }
-#page-expo{
+.page-expo{
     font-size: 40px;
+    text-align: center;
+    grid-row: 1/2;
+    grid-column: 1/4;
+    margin-top: -50px;
 }
 .rates-grid{
     margin-bottom: 1px;
@@ -235,29 +239,31 @@ main section img {
     margin-bottom: 1px;
 }
 
-#dates-prices p1 {
+#date-1 {
     grid-row: 1/2;
     grid-column: 1/2;
     text-align: center;
+    margin-top: 100px;
 
 }
 #action-img{
     grid-column: 2/3;
     grid-row: 1/2;
     text-align: center;
-
+    margin-top: 50px;
 }
-#dates-prices p2 {
+#date-2 {
     grid-row: 1/2;
     grid-column: 3/4;
     text-align: center;
+    margin-top: 75px;
 }
 #raft-img{
     grid-column:1/2;
     grid-row:2/3;
     text-align: center;
 }
-#dates-prices p3 {
+#date-3 {
     grid-column: 2/3;
     grid-row:2/3;    
     text-align: center;
@@ -269,7 +275,7 @@ main section img {
     height:25%;
     text-align: center;
 }
-#dates-prices p4{
+#date-4{
     grid-column: 1/4;
     grid-row: 3/4;
     margin-top: -700px;
@@ -279,6 +285,7 @@ main section img {
     grid-row: 3/4;
     width:600px;
     height:700px;
+    margin-top: -300px;
 }
 
 
