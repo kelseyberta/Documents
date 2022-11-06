@@ -208,6 +208,79 @@ main section img {
     opacity: .6;
     transform: scale(1.1);
 }
+.rates-header {
+    font-size: 50px;
+    color: #124559;
+    font-family: "Permanent Marker", "Nanum Gothic", sans-serif;
+}
+#top-msg h4 {
+    color:black;
+}
+#page-expo{
+    font-size: 40px;
+}
+.rates-grid{
+    margin-bottom: 1px;
+}
+#dates-prices{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 25px;
+    color: #124559;   
+    margin-top: 100px; 
+    grid-gap: 90px;
+    justify-items: center;
+    margin-left: 50px;
+    margin-right:50px;
+    margin-bottom: 1px;
+}
+
+#dates-prices p1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    text-align: center;
+
+}
+#action-img{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+
+}
+#dates-prices p2 {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    text-align: center;
+}
+#raft-img{
+    grid-column:1/2;
+    grid-row:2/3;
+    text-align: center;
+}
+#dates-prices p3 {
+    grid-column: 2/3;
+    grid-row:2/3;    
+    text-align: center;
+}
+#people-rapids-img{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    width: fit-content;
+    height:25%;
+    text-align: center;
+}
+#dates-prices p4{
+    grid-column: 1/4;
+    grid-row: 3/4;
+    margin-top: -700px;
+}
+.logo-rates{
+    grid-column: 1/4;
+    grid-row: 3/4;
+    width:600px;
+    height:700px;
+}
+
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
@@ -250,4 +323,19 @@ main section img {
         margin-top: 25px;
     }
 }
+
       
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
