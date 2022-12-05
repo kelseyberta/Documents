@@ -142,10 +142,23 @@ footer{
     height: 450px;
     padding-left: 40px;
 }
+.mac-n-cheese-img{
+    grid-column: 1/2;
+    grid-row:1/2;
+    width: 375px;
+    height: 450px;
+    padding-left: 40px;
+}
 .cheesecake-name {
     grid-column: 2/4;
     grid-row:1/2;
     padding-top: 50px;
+    padding-left: 40px;
+
+}
+.mac-n-cheese-name {
+    grid-column: 2/4;
+    grid-row:1/2;
     padding-left: 40px;
 
 }
@@ -155,10 +168,23 @@ footer{
     padding-top: 90px;
     padding-right: 70px;
 }
+.mac-n-cheese-directions{
+    grid-row:1/2;
+    grid-column: 4/6;
+    padding-top: 20px;
+    padding-right: 70px;
+}
 .cheesecake-ingredients{
     grid-column: 2/4;
     grid-row:1/2;
     padding-top: 90px;
+    padding-left: 70px;
+
+}
+.mac-n-cheese-ingredients{
+    grid-column: 2/4;
+    grid-row:1/2;
+    padding-top: 40px;
     padding-left: 70px;
 
 }
@@ -171,16 +197,37 @@ footer{
     padding-right: 60px;
 
 }
+.kale-pasta-img{
+    grid-column: 5/6;
+    grid-row:2/3;
+    width: 375px;
+    height: 450px;
+    padding-top: 130px;
+    padding-right: 60px;
+
+}
 .cookie-cake-name {
     grid-column: 3/5;
     grid-row:2/3;
     padding-left: 60px;
     padding-top: 40px;
 }
+.kale-pasta-name {
+    grid-column: 3/5;
+    grid-row:2/3;
+    padding-left: 60px;
+    padding-top: 110px;
+}
 .cookie-cake-directions{
     grid-row:2/3;
     grid-column: 1/3;
     padding-top: 90px;
+
+}
+.kale-pasta-directions{
+    grid-row:2/3;
+    grid-column: 1/3;
+    padding-top: 110px;
 
 }
 .cookie-cake-ingredients{
@@ -189,7 +236,12 @@ footer{
     padding-top: 90px;
     padding-left: 50px;
 }
-
+.kale-pasta-ingredients{
+    grid-column: 3/5;
+    grid-row:2/3;
+    padding-top: 150px;
+    padding-left: 50px;
+}
 .lemon-blueberry-img{
     grid-column: 1/2;
     grid-row: 3/4;
@@ -198,10 +250,25 @@ footer{
     padding-top: 70px;
     padding-left: 20px;
 }
+.francese-img{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    width: 325px;
+    height: 475px;
+    padding-top: 145px;
+    padding-left: 10px;
+}
 .lemon-blueberry-name{
     grid-column:2/4;
     grid-row: 3/4;
     padding-top: 20px;
+    padding-left: 40px;
+
+}
+.chicken-name{
+    grid-column:2/4;
+    grid-row: 3/4;
+    padding-top: 145px;
     padding-left: 40px;
 
 }
@@ -211,11 +278,22 @@ footer{
     padding-top: 70px;
     padding-left: 20px;
 }
+.chicken-ingredients{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    padding-top: 175px;
+    padding-right: 150PX;}
 .lemon-blueberry-directions{
     grid-column: 3/6;
     grid-row: 3/4;
     padding-top: 70px;
     padding-left: 180px;
+}
+.chicken-directions{
+    grid-column: 3/6;
+    grid-row: 3/4;
+    padding-top: 175px;
+    padding-left: 150px;
 }
 .pecan-ring-img{
     grid-column: 5/6;
@@ -225,11 +303,25 @@ footer{
     padding-top: 60px;
 
 }
+.spaghetti-img{
+    grid-column: 5/6;
+    grid-row: 4/5;
+    width: 375px;
+    height: 450px;
+    padding-top: 20px;
+
+}
 .pecan-ring-name{
     grid-column: 3/5;
     grid-row: 4/5;
     padding-left: 60px;
     padding-top: 20px;
+
+}
+.spaghetti-name{
+    grid-column: 3/5;
+    grid-row: 4/5;
+    padding-left: 60px;
 
 }
 .pecan-ring-ingredients{
@@ -239,10 +331,24 @@ footer{
     padding-left: 60px;
 
 }
+.spaghetti-ingredients{
+    grid-column: 3/5;
+    grid-row: 4/5;
+    padding-top: 40px;
+    padding-left: 60px;
+
+}
 .pecan-ring-directions{
     grid-row: 4/5;
     grid-column: 1/3;
     padding-top: 50px;
+    padding-right: 40px;
+
+}
+.spaghetti-directions{
+    grid-row: 4/5;
+    grid-column: 1/3;
+    padding-top: 20px;
     padding-right: 40px;
 
 }
@@ -254,6 +360,15 @@ footer{
     padding-top: 30px;
     padding-left: 20px;
 }
+.turkey-img{
+    grid-row: 5/6;
+    grid-column: 1/2;
+    width: 375px;
+    height: 500px;
+    padding-left: 20px;
+    padding-bottom: 150px;
+    padding-top: -50px;
+}
 .pumpkin-name{
     grid-row: 5/6;
     grid-column: 2/4;
@@ -261,13 +376,32 @@ footer{
     padding-left: 20px;
 
 }
-.pumpkin-ingredients{
+.turkey-name{
+    grid-row: 5/6;
+    grid-column: 2/4;
+    padding-top: 50px;
+    padding-left: 20px;
+
+}
+.pumpkin-ingredientss{
+    grid-row: 5/6;
+    grid-column: 2/4;
+    padding-top: 100px;
+
+}
+.turkey-ingredients{
     grid-row: 5/6;
     grid-column: 2/4;
     padding-top: 100px;
 
 }
 .pumpkin-directions{
+    grid-row: 5/6;
+    grid-column: 4/6;
+    padding-top: 100px;
+
+}
+.turkey-directions{
     grid-row: 5/6;
     grid-column: 4/6;
     padding-top: 100px;
